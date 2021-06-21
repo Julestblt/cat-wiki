@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="621520a4-b064-4677-99e3-ed1b30c23a8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Logo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/Rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/screens/BreedDetailsScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/screens/SearchDetails.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/screens/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/screens/HomeScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/screens/BreedDetailsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/screens/BreedDetailsScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1624278975722</updated>
       <workItem from="1624278977985" duration="5478000" />
-      <workItem from="1624290959928" duration="15034000" />
+      <workItem from="1624290959928" duration="16859000" />
     </task>
     <servers />
   </component>
