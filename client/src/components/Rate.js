@@ -2,7 +2,7 @@
 
 const Rate = (props) => {
     return (
-        <div className={'flex items-end w-full justify-between'}>
+        <div className={'flex xl:flex-row lg:flex-row flex-col xl:items-end lg:items-end w-full justify-between'}>
             <p className={'font-bold mt-8'}>{props.title}: </p>
             {props.rate === 0 &&
                 <div className={'flex items-end'}>

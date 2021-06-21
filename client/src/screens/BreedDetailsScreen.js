@@ -37,12 +37,12 @@ const BreedDetails = () => {
     return (
         <div className={'xl:container lg:container md:mx-auto mx-auto'}>
             <Header/>
-            <div className={'flex pt-10 pl-8'}>
-                <div className={'xl:w-2/4'}>
-                    <img src={breedDetails.url} width={'60%'} className={'rounded-3xl'}/>
+            <div className={'flex flex-col lg:flex-row md:flex-row xl:flex-row pt-10 xl:pl-8 lg:pl-8 p-5'}>
+                <div className={'xl:w-2/4 xl:w-2/4 md:w-2/4 w-full'}>
+                    <img src={breedDetails.url} className={'rounded-3xl xl:w-3/5 md:w-3/5 lg:w-3/5 w-full'}/>
                 </div>
-                <div className={'xl:w-2/4'}>
-                    <h1 className={'font-medium text-4xl'}>{breedDetails.breeds[0].name}</h1>
+                <div className={'xl:w-2/4 lg:w-2/4 md:w-2/4'}>
+                    <h1 className={'font-medium text-4xl mt-4'}>{breedDetails.breeds[0].name}</h1>
                     <p className={'mt-8'}>{breedDetails.breeds[0].description}</p>
                     <p className={'mt-8'}><span className={'font-bold'}>Temperament: </span>{breedDetails.breeds[0].temperament}</p>
                     <p className={'mt-8'}><span className={'font-bold'}>Origin: </span>{breedDetails.breeds[0].origin}</p>
@@ -57,13 +57,13 @@ const BreedDetails = () => {
                     <Rate title={'Stranger friendly'} rate={breedDetails.breeds[0].stranger_friendly}/>
                 </div>
             </div>
-            <div className={'mt-9 mb-32'}>
+            <div className={'mt-9 xl:mb-32 lg:mb-32 md:mb-32 p-5'}>
                 <h2 className={'other-photos mb-14'}>Other photos</h2>
                 <div className={'flex flex-wrap justify-between'}>
                     {list.map((element) => {
                         console.log(element)
                         return (
-                            <img className={'w-22 rounded-3xl mb-12'} src={element.url} alt={''}/>
+                            <img className={'w-22 lg:w-22 rounded-3xl mb-12'} src={element.url} alt={''}/>
                         )
                     })}
                 </div>
