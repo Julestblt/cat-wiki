@@ -4,18 +4,23 @@ import axios from "axios";
 import {useParams} from "react-router-dom";
 import Header from "../components/Header";
 import Rate from "../components/Rate";
+import Footer from "../components/Footer";
 
 
 const BreedDetails = () => {
     const [breedDetails, setBreedDetails] = useState([])
     const [isLoading, setIsLoading] = useState(true)
+    const [list, setList] = useState([])
     let param = useParams();
 
     useEffect(() => {
         axios.get(`https://api.thecatapi.com/v1/breeds/search?q=${param.name}`).then((response) => {
             axios.get(`https://api.thecatapi.com/v1/images/search?breed_ids=${response.data[0].id}`).then((r) => {
                 setBreedDetails(r.data[0])
-                setIsLoading(false)
+                axios.get(`https://api.thecatapi.com/v1/images/search?limit=8&breed_id=${response.data[0].id}`).then((res) => {
+                    setList(res.data)
+                    setTimeout(function(){ setIsLoading(false) }, 900);
+                })
             })
         })
 
@@ -23,10 +28,12 @@ const BreedDetails = () => {
 
     if (isLoading){
         return (
-            <div><p>Loading</p></div>
+            <div className="loader-wrapper">
+                <span className="loader"><span className="loader-inner"/></span>
+            </div>
         )
     }
-    console.log(breedDetails)
+
     return (
         <div className={'xl:container lg:container md:mx-auto mx-auto'}>
             <Header/>
@@ -50,7 +57,18 @@ const BreedDetails = () => {
                     <Rate title={'Stranger friendly'} rate={breedDetails.breeds[0].stranger_friendly}/>
                 </div>
             </div>
-
+            <div className={'mt-9 mb-32'}>
+                <h2 className={'other-photos mb-14'}>Other photos</h2>
+                <div className={'flex flex-wrap justify-between'}>
+                    {list.map((element) => {
+                        console.log(element)
+                        return (
+                            <img className={'w-22 rounded-3xl mb-12'} src={element.url} alt={''}/>
+                        )
+                    })}
+                </div>
+            </div>
+            <Footer/>
         </div>
     )
 }
