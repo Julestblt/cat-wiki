@@ -1,13 +1,152 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background-cat {
+    margin-top: 30px;
+    height: 707px;
+    background: url("./assets/HeroImagelg.png");
+    background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+datalist {
+    position: absolute;
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 0 0 5px 5px;
+    border-top: none;
+    font-family: sans-serif;
+    width: 350px;
+    padding: 5px;
+}
+
+option:hover,  .active{
+    background-color: lightblue;
+}
+
+.rate-bar-false {
+    width: 60px;
+    height: 12px;
+    background: #E0E0E0;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+.rate-bar-true {
+    width: 60px;
+    height: 12px;
+    background: #544439;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+
+option {
+    background-color: white;
+    padding: 4px;
+    color: blue;
+    margin-bottom: 1px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.rounded-top {
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+.fill-white {
+    fill: white;
+}
+
+.custom-search {
+    margin-top: 40px;
+    width: 90%;
+    height: 70px;
+    background: #FFFFFF;
+    border-radius: 59px;
+    padding-left: 40px;
+}
+
+.montserrat-500 {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.paragraph {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #291507;
+}
+
+.title {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: #291507;
+}
+
+.montserrat-600 {
+    margin-top: 20px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #291507;
+}
+
+.see-more{
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(41, 21, 7, 0.6);
+}
+
+.read-more {
+    margin-top: 2.5rem;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(41, 21, 7, 0.6);
+}
+
+.montserrat-700 {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+
+    color: #291507;
+}
+
+.background-home {
+    height: auto;
+    background: #E3E1DC;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.separator {
+    margin-top: 5px;
+    height: 1px;
+    width: 60px;
+    border-top: 3px solid black;
+}
+
+.image-cat {
+    width: 220px;
+    height: 220px;
 }
