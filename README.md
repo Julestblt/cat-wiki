@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://www.cat-wiki.julesthibault.fr">
+    <a href="https://www.cat-wiki.julesthibault.fr" target="__blank">
       Demo
     </a>
     <span> | </span>
