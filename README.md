@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/Julestblt/cat-wiki/">
+    <a href="https://github.com/Julestblt/cat-wiki">
       Solution
     </a>
     <span> | </span>
